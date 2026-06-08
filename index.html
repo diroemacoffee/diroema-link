@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diroema Coffee | Links</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(18,12,8,.75),rgba(18,12,8,.75)),
+    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:24px;
+    color:white;
+}
+
+.card{
+    width:100%;
+    max-width:430px;
+    backdrop-filter:blur(18px);
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:28px;
+    padding:36px 28px;
+    text-align:center;
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+}
+
+.logo{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid rgba(255,255,255,.2);
+    margin-bottom:18px;
+}
+
+h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:42px;
+    font-weight:600;
+    letter-spacing:.5px;
+}
+
+.subtitle{
+    margin-top:8px;
+    opacity:.8;
+    font-size:14px;
+    line-height:1.6;
+}
+
+.links{
+    margin-top:32px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+}
+
+.link-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    text-decoration:none;
+    color:white;
+    padding:16px;
+    border-radius:18px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    transition:.25s ease;
+    font-weight:500;
+}
+
+.link-btn:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,.15);
+}
+
+.footer{
+    margin-top:28px;
+    font-size:12px;
+    opacity:.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- Ganti dengan logo cafe -->
+    <img src="logo.jpg" alt="Diroema Coffee" class="logo">
+
+    <h1>Diroema Coffee</h1>
+
+    <p class="subtitle">
+        Coffee • Community • Conversation
+        <br>
+        Ruang nyaman untuk menikmati kopi dan cerita.
+    </p>
+
+    <div class="links">
+
+        <a href="https://instagram.com/diroemacoffee" class="link-btn">
+            📸 Instagram
+        </a>
+
+        <a href="https://wa.me/6281234567890" class="link-btn">
+            ☕ WhatsApp
+        </a>
+
+        <a href="https://maps.google.com" class="link-btn">
+            📍 Google Maps
+        </a>
+
+        <a href="https://tiktok.com/@diroemacoffee" class="link-btn">
+            🎵 TikTok
+        </a>
+
+        <a href="#" class="link-btn">
+            📖 Menu
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Diroema Coffee
+    </div>
+
+</div>
+
+</body>
+</html>
