@@ -25,14 +25,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 body{
     font-family:'Inter',sans-serif;
     min-height:100vh;
-    background:#233e2d;
+
+    background:
+    linear-gradient(
+        rgba(35,62,45,0.80),
+        rgba(35,62,45,0.80)
+    ),
+    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
     display:flex;
     justify-content:center;
     align-items:center;
     padding:24px;
+
     color:#f0eee6;
 }
-
 .card{
     width:100%;
     max-width:430px;
