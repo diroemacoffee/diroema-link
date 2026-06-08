@@ -3,14 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diroema Coffee | Links</title>
+
+<title>Diroema Coffee</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
+
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -20,35 +25,41 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 body{
     font-family:'Inter',sans-serif;
     min-height:100vh;
-    background:
-    linear-gradient(rgba(18,12,8,.75),rgba(18,12,8,.75)),
-    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');
-    background-size:cover;
-    background-position:center;
+    background:#233e2d;
     display:flex;
     justify-content:center;
     align-items:center;
     padding:24px;
-    color:white;
+    color:#f0eee6;
 }
 
 .card{
     width:100%;
     max-width:430px;
-    backdrop-filter:blur(18px);
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(240,238,230,0.10);
+
     border-radius:28px;
+
     padding:36px 28px;
+
     text-align:center;
-    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+    box-shadow:
+    0 20px 50px rgba(0,0,0,.25),
+    inset 0 1px 0 rgba(255,255,255,.05);
 }
 
 .logo{
     width:180px;
     max-width:70%;
     height:auto;
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 
 h1{
@@ -56,13 +67,14 @@ h1{
     font-size:42px;
     font-weight:600;
     letter-spacing:.5px;
+    color:#f0eee6;
 }
 
 .subtitle{
-    margin-top:8px;
-    opacity:.8;
+    margin-top:10px;
+    color:#d8d5ca;
     font-size:14px;
-    line-height:1.6;
+    line-height:1.8;
 }
 
 .links{
@@ -76,27 +88,63 @@ h1{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:10px;
+    gap:12px;
+
     text-decoration:none;
-    color:white;
+
+    color:#f0eee6;
+
     padding:16px;
+
     border-radius:18px;
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.12);
-    transition:.25s ease;
+
+    background:rgba(255,255,255,0.06);
+
+    border:1px solid rgba(240,238,230,0.10);
+
+    transition:all .25s ease;
+
     font-weight:500;
+
+    backdrop-filter:blur(8px);
 }
 
 .link-btn:hover{
-    transform:translateY(-3px);
-    background:rgba(255,255,255,.15);
+    transform:translateY(-4px) scale(1.02);
+
+    background:rgba(240,238,230,0.10);
+
+    border-color:rgba(240,238,230,0.20);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.link-btn i{
+    font-size:20px;
 }
 
 .footer{
     margin-top:28px;
     font-size:12px;
-    opacity:.6;
+    color:#cfcabf;
+    opacity:.75;
 }
+
+@media (max-width:480px){
+
+    .card{
+        padding:30px 22px;
+    }
+
+    h1{
+        font-size:36px;
+    }
+
+    .logo{
+        width:160px;
+    }
+}
+
 </style>
 </head>
 
@@ -104,40 +152,41 @@ h1{
 
 <div class="card">
 
-    <!-- Ganti dengan logo cafe -->
     <img src="logo.png" alt="Diroema Coffee" class="logo">
 
     <h1>Diroema Coffee</h1>
 
     <p class="subtitle">
-        Coffee • Community • Conversation
+        Drink • Chill • Connect
         <br>
-        Ruang nyaman untuk menikmati kopi dan cerita.
+        Coffee • Community • Conversation
     </p>
 
     <div class="links">
 
-        <a href="https://maps.app.goo.gl/MZwPLTi4Gw5A9pPg7" class="link-btn">
-        <i class="fa-solid fa-location-dot"></i>
-        Google Maps
+        <a href="https://maps.app.goo.gl/MZwPLTi4Gw5A9pPg7" class="link-btn" target="_blank">
+            <i class="fa-solid fa-location-dot"></i>
+            Google Maps
         </a>
 
-        <a href="#" class="link-btn">
-            📖 Menu
+        <a href="https://wa.me/6281234567890" class="link-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
         </a>
 
-        <a href="https://wa.me/6281234567890" class="link-btn">
-            ☕ WhatsApp
+        <a href="https://instagram.com/diroemacoffee" class="link-btn" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram
         </a>
 
-        <a href="https://instagram.com/diroemacoffee" class="link-btn">
-        <i class="fa-brands fa-instagram"></i>
-        Instagram
+        <a href="https://tiktok.com/@diroemacoffee" class="link-btn" target="_blank">
+            <i class="fa-brands fa-tiktok"></i>
+            TikTok
         </a>
 
-        <a href="https://tiktok.com/@diroemacoffee" class="link-btn">
-        <i class="fa-brands fa-tiktok"></i>
-        TikTok
+        <a href="/menu" class="link-btn">
+            <i class="fa-solid fa-book-open"></i>
+            Menu
         </a>
 
     </div>
