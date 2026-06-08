@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -24,7 +24,13 @@ body{
     font-family:'Inter',sans-serif;
     min-height:100vh;
 
-    background:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');
+    background:
+    linear-gradient(
+        rgba(0,0,0,.35),
+        rgba(0,0,0,.35)
+    ),
+    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2000&q=80');
+
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
@@ -32,113 +38,149 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:24px;
 
-    color:#f0eee6;
+    padding:24px;
 }
 
 .card{
-    width:100%;
-    max-width:430px;
 
-    backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
+    width:min(92vw,560px);
 
-    background:rgba(255,255,255,0.08);
-    border:1px solid rgba(255,255,255,0.12);
+    backdrop-filter:blur(26px);
+    -webkit-backdrop-filter:blur(26px);
 
-    border-radius:28px;
-    padding:40px 30px;
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:36px;
+
+    padding:38px 34px;
 
     text-align:center;
 
-    box-shadow:0 15px 40px rgba(0,0,0,.25);
+    box-shadow:
+    0 25px 60px rgba(0,0,0,.35);
+
 }
 
 .logo{
-    width:350px;
-    max-width:70%;
+    width:320px;
+    max-width:95%;
     height:auto;
-    margin-bottom:10px;
+
+    margin-bottom:16px;
 }
 
 h1{
-    font-family:'Cormorant Garamond',serif;
+
     font-size:42px;
-    font-weight:600;
-    letter-spacing:.5px;
-    color:#f0eee6;
+    font-weight:700;
+
+    letter-spacing:8px;
+
+    color:#f5f1e8;
+
+    margin-bottom:8px;
 }
 
 .subtitle{
-    margin-top:10px;
-    color:#d8d5ca;
-    font-size:14px;
-    line-height:1.8;
+
+    color:rgba(255,255,255,.85);
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    margin-bottom:30px;
 }
 
 .links{
-    margin-top:32px;
+
     display:flex;
     flex-direction:column;
-    gap:14px;
+
+    gap:16px;
 }
 
 .link-btn{
+
     display:flex;
+
     align-items:center;
     justify-content:center;
-    gap:12px;
+
+    gap:14px;
+
+    width:100%;
+
+    padding:20px;
 
     text-decoration:none;
-    color:#f0eee6;
 
-    padding:16px;
-    border-radius:18px;
+    color:#ffffff;
 
-    background:rgba(255,255,255,0.06);
-    border:1px solid rgba(240,238,230,0.10);
+    font-size:20px;
 
-    transition:all .25s ease;
+    font-weight:600;
 
-    font-weight:500;
+    border-radius:22px;
 
-    backdrop-filter:blur(8px);
+    background:rgba(255,255,255,.10);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    transition:.25s ease;
 }
 
 .link-btn:hover{
-    transform:translateY(-4px) scale(1.02);
 
-    background:rgba(240,238,230,0.10);
-    border-color:rgba(240,238,230,0.20);
+    transform:translateY(-4px);
 
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    background:rgba(255,255,255,.18);
+
+    border-color:rgba(255,255,255,.22);
+
+    box-shadow:
+    0 12px 30px rgba(0,0,0,.18);
 }
 
 .link-btn i{
-    font-size:20px;
+
+    font-size:22px;
 }
 
 .footer{
+
     margin-top:28px;
-    font-size:12px;
-    color:#cfcabf;
-    opacity:.75;
+
+    color:rgba(255,255,255,.65);
+
+    font-size:13px;
+
+    letter-spacing:1px;
 }
 
-@media (max-width:480px){
+@media(max-width:480px){
 
     .card{
-        padding:30px 22px;
-    }
-
-    h1{
-        font-size:36px;
+        padding:28px 22px;
     }
 
     .logo{
-        width:160px;
+        width:260px;
     }
+
+    h1{
+        font-size:34px;
+        letter-spacing:5px;
+    }
+
+    .link-btn{
+        font-size:18px;
+        padding:18px;
+    }
+
 }
 
 </style>
@@ -148,7 +190,9 @@ h1{
 
 <div class="card">
 
-    <img src="logo.png" class="logo" alt="Diroema Coffee Logo">
+    <img src="logo.png" class="logo" alt="Diroema Coffee">
+
+    <h1>DIROEMA</h1>
 
     <p class="subtitle">
         Drink • Chill • Connect
@@ -158,27 +202,36 @@ h1{
 
     <div class="links">
 
-        <a href="https://maps.app.goo.gl/MZwPLTi4Gw5A9pPg7" class="link-btn" target="_blank">
+        <a href="https://maps.app.goo.gl/MZwPLTi4Gw5A9pPg7"
+           class="link-btn"
+           target="_blank">
             <i class="fa-solid fa-location-dot"></i>
             Google Maps
         </a>
 
-        <a href="https://wa.me/6281234567890" class="link-btn" target="_blank">
+        <a href="https://wa.me/6281234567890"
+           class="link-btn"
+           target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
             WhatsApp
         </a>
 
-        <a href="https://instagram.com/diroemacoffee" class="link-btn" target="_blank">
+        <a href="https://instagram.com/diroemacoffee"
+           class="link-btn"
+           target="_blank">
             <i class="fa-brands fa-instagram"></i>
             Instagram
         </a>
 
-        <a href="https://tiktok.com/@diroemacoffee" class="link-btn" target="_blank">
+        <a href="https://tiktok.com/@diroemacoffee"
+           class="link-btn"
+           target="_blank">
             <i class="fa-brands fa-tiktok"></i>
             TikTok
         </a>
 
-        <a href="/menu" class="link-btn">
+        <a href="/menu"
+           class="link-btn">
             <i class="fa-solid fa-book-open"></i>
             Menu
         </a>
@@ -186,7 +239,7 @@ h1{
     </div>
 
     <div class="footer">
-        © 2026 Diroema Coffee
+        © 2026 DIROEMA COFFEE
     </div>
 
 </div>
