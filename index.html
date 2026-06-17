@@ -158,10 +158,12 @@ body {
     text-transform: uppercase;
     margin-bottom: 12px;
 }
+
+/* Menu items kini satu kolom, foto tampil penuh sesuai ukuran asli */
 .menu-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 .menu-item {
     border-radius: 16px;
@@ -169,41 +171,38 @@ body {
     cursor: pointer;
     border: 1px solid rgba(255,255,255,.08);
     transition: .2s ease;
-    display: flex;
-    flex-direction: column;
+    background: rgba(0,0,0,.2);
 }
 .menu-item:hover {
-    transform: scale(1.03);
+    transform: scale(1.015);
     border-color: rgba(255,255,255,.2);
 }
 .menu-item img {
     width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
+    height: auto;
     display: block;
 }
 
-/* Bagian Info Menu (Nama & Harga) */
+/* Bagian Info Menu (Nama & Harga) di bawah foto, satu baris */
 .menu-item-info {
-    padding: 12px 10px;
+    padding: 12px 14px;
     background: rgba(0,0,0,.65);
-    text-align: center;
-    flex-grow: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
 .menu-item-name {
     color: #f5f1e8;
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 4px;
 }
 .menu-price {
     font-size: 13px;
     color: #FFDE21; /* Warna kuning agar lebih menonjol */
     font-weight: 700;
     letter-spacing: 0.5px;
+    flex-shrink: 0;
 }
 
 /* ===== LIGHTBOX ===== */
@@ -251,7 +250,7 @@ body {
     .logo { width: 260px; }
     .link-btn { font-size: 18px; padding: 18px; }
     .modal-box { padding: 24px 18px; }
-    .menu-grid { gap: 8px; }
+    .menu-grid { gap: 10px; }
 }
 </style>
 </head>
