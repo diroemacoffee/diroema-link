@@ -434,6 +434,7 @@ function handleOverlayClick(e) {
 
 /* ===== LIGHTBOX ===== */
 function openLightbox(src) {
+    gtag('event', 'click_menu_item', { item_name: src });
     document.getElementById('lbImg').src = src;
     document.getElementById('lightbox').classList.add('active');
 }
