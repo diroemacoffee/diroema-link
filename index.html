@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L49FG4N056"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L49FG4N056');
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diroema Coffee</title>
@@ -271,23 +280,23 @@ body {
     </p>
 
     <div class="links">
-        <a href="#" class="link-btn" onclick="openMenu(event)">
+        <a href="#" class="link-btn" onclick="gtag('event','click_menu'); openMenu(event)">
             <i class="fa-solid fa-book-open"></i>
             Menu
         </a>
-        <a href="https://maps.app.goo.gl/MZwPLTi4Gw5A9pPg7" class="link-btn" target="_blank">
+        <a href="https://maps.app.goo.gl/MZwPLTi4Gw5A9pPg7" class="link-btn" target="_blank" onclick="gtag('event','click_maps')">
             <i class="fa-solid fa-location-dot"></i>
             Google Maps
         </a>
-        <a href="https://wa.me/6285555550615" class="link-btn" target="_blank">
+        <a href="https://wa.me/6285555550615" class="link-btn" target="_blank" onclick="gtag('event','click_whatsapp')">
             <i class="fa-brands fa-whatsapp"></i>
             WhatsApp
         </a>
-        <a href="https://instagram.com/diroemacoffee" class="link-btn" target="_blank">
+        <a href="https://instagram.com/diroemacoffee" class="link-btn" target="_blank" onclick="gtag('event','click_instagram')">
             <i class="fa-brands fa-instagram"></i>
             Instagram
         </a>
-        <a href="https://tiktok.com/@diroemacoffee" class="link-btn" target="_blank">
+        <a href="https://tiktok.com/@diroemacoffee" class="link-btn" target="_blank" onclick="gtag('event','click_tiktok')">
             <i class="fa-brands fa-tiktok"></i>
             TikTok
         </a>
