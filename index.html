@@ -316,28 +316,28 @@ body {
         <div class="menu-category">
             <div class="category-label">Black Coffee</div>
             <div class="menu-grid">
-                <div class="menu-item" onclick="openLightbox('menu/kopi-tubruk.jpg')">
+                <div class="menu-item" onclick="openLightbox('menu/kopi-tubruk.jpg', 'Kopi Tubruk')">
                     <img src="menu/kopi-tubruk.jpg" alt="Kopi Tubruk">
                     <div class="menu-item-info">
                         <div class="menu-item-name">Kopi Tubruk</div>
                         <div class="menu-price">5K</div>
                     </div>
                 </div>
-                <div class="menu-item" onclick="openLightbox('menu/espresso.jpg')">
+                <div class="menu-item" onclick="openLightbox('menu/espresso.jpg', 'Espresso')">
                     <img src="menu/espresso.jpg" alt="Espresso">
                     <div class="menu-item-info">
                         <div class="menu-item-name">Espresso</div>
                         <div class="menu-price">8K</div>
                     </div>
                 </div>
-                <div class="menu-item" onclick="openLightbox('menu/americano.jpg')">
+                <div class="menu-item" onclick="openLightbox('menu/americano.jpg', 'Americano')">
                     <img src="menu/americano.jpg" alt="Americano">
                     <div class="menu-item-info">
                         <div class="menu-item-name">Americano</div>
                         <div class="menu-price">10K</div>
                     </div>
                 </div>
-                <div class="menu-item" onclick="openLightbox('menu/filter-coffee.jpg')">
+                <div class="menu-item" onclick="openLightbox('menu/filter-coffee.jpg', 'Filter Coffee')">
                     <img src="menu/filter-coffee.jpg" alt="Filter Coffee">
                     <div class="menu-item-info">
                         <div class="menu-item-name">Filter Coffee</div>
@@ -350,35 +350,35 @@ body {
         <div class="menu-category">
             <div class="category-label">White Coffee</div>
             <div class="menu-grid">
-                <div class="menu-item" onclick="openLightbox('menu/spanish-latte.jpg')">
+                <div class="menu-item" onclick="openLightbox('menu/spanish-latte.jpg', 'Spanish Latte')">
                     <img src="menu/spanish-latte.jpg" alt="Spanish Latte">
                     <div class="menu-item-info">
                         <div class="menu-item-name">Spanish Latte</div>
                         <div class="menu-price">10K</div>
                     </div>
                 </div>
-                <div class="menu-item" onclick="openLightbox('menu/cappuccino.jpg')">
+                <div class="menu-item" onclick="openLightbox('menu/cappuccino.jpg', 'Cappuccino')">
                     <img src="menu/cappuccino.jpg" alt="Cappuccino">
                     <div class="menu-item-info">
                         <div class="menu-item-name">Cappuccino</div>
                         <div class="menu-price">12K</div>
                     </div>
                 </div>
-                <div class="menu-item" onclick="openLightbox('menu/aren-latte.jpg')">
+                <div class="menu-item" onclick="openLightbox('menu/aren-latte.jpg', 'Aren Latte')">
                     <img src="menu/aren-latte.jpg" alt="Aren Latte">
                     <div class="menu-item-info">
                         <div class="menu-item-name">Aren Latte</div>
                         <div class="menu-price">12K</div>
                     </div>
                 </div>
-                <div class="menu-item" onclick="openLightbox('menu/cafe-latte.jpg')">
+                <div class="menu-item" onclick="openLightbox('menu/cafe-latte.jpg', 'Cafe Latte')">
                     <img src="menu/cafe-latte.jpg" alt="Cafe Latte">
                     <div class="menu-item-info">
                         <div class="menu-item-name">Cafe Latte</div>
                         <div class="menu-price">12K</div>
                     </div>
                 </div>
-                <div class="menu-item" onclick="openLightbox('menu/butterscotch-latte.jpg')">
+                <div class="menu-item" onclick="openLightbox('menu/butterscotch-latte.jpg', 'Butterscotch Latte')">
                     <img src="menu/butterscotch-latte.jpg" alt="Butterscotch Latte">
                     <div class="menu-item-info">
                         <div class="menu-item-name">Butterscotch Latte</div>
@@ -391,14 +391,14 @@ body {
         <div class="menu-category">
             <div class="category-label">Non Coffee</div>
             <div class="menu-grid">
-                <div class="menu-item" onclick="openLightbox('menu/matcha-latte.jpg')">
+                <div class="menu-item" onclick="openLightbox('menu/matcha-latte.jpg', 'Matcha Latte')">
                     <img src="menu/matcha-latte.jpg" alt="Matcha Latte">
                     <div class="menu-item-info">
                         <div class="menu-item-name">Matcha Latte</div>
                         <div class="menu-price">15K</div>
                     </div>
                 </div>
-                <div class="menu-item" onclick="openLightbox('menu/milky-aren.jpg')">
+                <div class="menu-item" onclick="openLightbox('menu/milky-aren.jpg', 'Milky Aren')">
                     <img src="menu/milky-aren.jpg" alt="Milky Aren">
                     <div class="menu-item-info">
                         <div class="menu-item-name">Milky Aren</div>
@@ -433,8 +433,8 @@ function handleOverlayClick(e) {
 }
 
 /* ===== LIGHTBOX ===== */
-function openLightbox(src) {
-    gtag('event', 'click_menu_item', { item_name: src });
+function openLightbox(src, name) {
+    gtag('event', 'click_menu_item', { item_name: name });
     document.getElementById('lbImg').src = src;
     document.getElementById('lightbox').classList.add('active');
 }
